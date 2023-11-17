@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Results Portal</title>
+  <link rel = "icon" href = "ideal_logo.jpg" type = "image/x-icon">
+  <style>
+
+    :root{
+  --background-dark: #2d3548;
+  --text-light: rgba(255,255,255,0.6);
+  --text-lighter: rgba(255,255,255,0.9);
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 64px;
+  --width-container: 1200px;
+}
+
+*{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+
+.bg-img {
+  /* The image used */
+  background-image: url("results portal.jpg");
+  /* Control the height of the image */
+  min-height: 600px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+@media only screen and (max-width: 768px) {
+  .bg-img {
+    background-size: calc(100vw + 100vh);
+  }
+}
+
+
+.logo{
+ width: 100px;
+ height: 100px;
+}
+h1 {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.hero-section{
+  align-items: flex-start;
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  padding: var(--spacing-xxl) var(--spacing-l);
+}
+
+.card-grid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: var(--spacing-l);
+  grid-row-gap: var(--spacing-l);
+  max-width: var(--width-container);
+  width: 100%;
+}
+
+@media(min-width: 540px){
+  .card-grid{
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media(min-width: 960px){
+  .card-grid{
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
+
+.card{
+  list-style: none;
+  position: relative;
+}
+
+.card:before{
+  content: '';
+  display: block;
+  padding-bottom: 150%;
+  width: 100%;
+}
+
+.card__background{
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--spacing-l);
+  bottom: 0;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: center;
+  trsnsform: scale(1) translateZ(0);
+  transition: 
+    filter 200ms linear,
+    transform 200ms linear;
+}
+
+.card:hover .card__background{
+  transform: scale(1.05) translateZ(0);
+}
+
+.card-grid:hover > .card:not(:hover) .card__background{
+  filter: blur(5px);
+}
+
+.card__content{
+  left: 0;
+  padding: var(--spacing-l);
+  position: absolute;
+  top: 0;
+}
+
+.card__category{
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-s);
+  text-transform: uppercase;
+}
+
+.card__heading{
+  color: var(--text-lighter);
+  font-size: 1.9rem;
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+  line-height: 1.4;
+  word-spacing: 100vw;
+ 
+}
+
+
+</style>
+</head>
+<body class="bg-img">
+  <h1 style='text-align:center;background:#03756b;font-size:13px;margin:0;'>
+       <marquee onmouseover='this.stop();' onmouseout='this.start();'>Under the Esteemed guidance of Mr.M.S.R.S.PRASAD M.Tech.,[Ph.D] Head of Computer Science Department. This Results portal is developed by students of Batch 2019-2023, 206K5A0502- J.Syam Sundar, 196K1A0521- N.Maneesh Khanna, 196K1A0546- Ch.Chandra Sekhar, 196K1A0538- U.Sai Sri Harshitha</marquee>
+  </h1>
+  <p>
+        <a href="http://idealtech.edu.in/">
+        <img class="logo" src="ideal_logo.jpg" alt="top">
+        </a>
+  </p>
+<!-- partial:index.partial.html -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<section class="hero-section">
+  <div class="card-grid">
+   <a class="card" href='student_login_page/desktop.php'>
+      <div class="card__background" style="background-color:#9DC209 "></div>
+      <div class="card__content" >
+        <p class="card__category">student</p>
+        <h3 class="card__heading">STUDENT LOGIN</h3>
+      </div>
+    </a>
+    <a class="card" href="mentor_login/desktop.php">
+      <div class="card__background" style="background-color:#64C5EB "></div>
+      <div class="card__content">
+        <p class="card__category">faculty Mentor</p>
+        <h3 class="card__heading">FACULTY AND MENTOR</h3>
+      </div>
+    </a>
+    <a class="card" href="Hod_login/desktop.php">
+      <div class="card__background" style="background-color:#E84DBA "></div>
+      <div class="card__content">
+        <p class="card__category">admin</p>
+        <h3 class="card__heading">PRINICIPAL EXAM-IC HOD</h3>
+      </div>
+    </a>
+    <a class="card" href="admin_login_page/desktop.php">
+      <div class="card__background" style="background-color:#FEB326 "></div>
+      <div class="card__content">
+        <p class="card__category">super admin</p>
+        <h3 class="card__heading">SUPER ADMIN</h3>
+      </div>
+    </a>
+  </div>
+</section>
+<footer style="text-align: center;">
+    <p><b>For R09,R10,R13 results. Please visit  <a href="http://www.results.idealtech.edu.in/">http://www.results.idealtech.edu.in/</a></b></p>
+</footer>
+<!-- partial -->  
+</body>
+</html>
