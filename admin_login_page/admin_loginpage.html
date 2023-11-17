@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IDEAL results portal Super Admin Login Page</title>
+  <link rel="icon" href="../ideal_logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./admin_loginpage.css">
+</head>
+<body id="page-login">
+  <div class="login-container">
+    <h2>IDEAL RESULTS PORTAL</h2>
+    <div class="login-box">
+      <a href="../index.html" style="position: absolute; right: 30px; top: 50px; transform: translateY(-50%);">
+        <i class="fa fa-home fa-3x" style="color: whitesmoke;"></i>
+      </a>
+      <div class="login-form">
+        <img width="60" height="60" align="center" src="../ideal_logo.jpg">
+        <p><i><b>Log in to Super Admin Panel</b></i></p>
+        <form method="POST" action="admin-login.php">
+          <input type="text" name="username" placeholder="User Name" autocomplete="off" class='input' required/>
+          <input type="password" name="password" placeholder="Password" autocomplete="off" class='input' required/>
+          <input type="password" name="validcode" placeholder="Valid code" autocomplete="off"class='input' required/>
+          <button class="btn">Log in to Admin Panel</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <p class="legal">IDEAL INSTITUTE OF TECHNOLOGY (KAKINADA)</p>
+</body> 
+</html>

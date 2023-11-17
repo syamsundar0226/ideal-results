@@ -1,0 +1,235 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}table{border-collapse:collapse;border-spacing:0;}
+html,body{height:100%;}
+body{
+background:url('background.jpg') center no-repeat;
+background-size:cover;
+font-family: 'Lato', sans-serif;
+overflow-y: hidden;
+}
+#fadeGray{
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+top:0;
+left:0;
+z-index:0;
+}
+#popupLogIn{
+position:relative;
+z-index:1;
+display:block;
+width:90%;
+max-width:1080px;
+height:480px;
+margin:0 auto;
+background:#28806d;
+margin-top:100px;
+-moz-box-shadow: 25px 25px 40px -15px #656565;
+-webkit-box-shadow: 25px 25px 40px -15px #656565;
+-o-box-shadow: 25px 25px 40px -15px #656565;
+box-shadow: 25px 25px 40px -15px #656565;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=40);
+}
+#popupLogIn aside{
+position:absolute;
+width:40%;
+height:100%;
+background:white;
+background-image:url('back.jpg');
+background-size:cover;/*100% auto;*/
+background-position:center center;
+background-repeat:no-repeat;
+}
+#popupLogIn aside:before{
+content:"";
+position:absolute;
+z-index:1;
+width:100%;
+height:100%;
+top:0;
+left:0;
+background:rgba(22, 72, 61, 0.3);
+}
+#popupLogIn aside .content{
+position:relative;
+z-index:2;
+text-align:center;
+color:#FEFFFF;
+padding:30px 40px;
+}
+#popupLogIn aside img{
+display:block;
+width:130px;
+margin:0 auto;
+}
+#popupLogIn aside .content p{
+opacity:0.98;
+}
+#popupLogIn aside .content .title{
+font-weight:bold;
+font-size:22px;
+margin:20px 0 0 0;
+}
+#popupLogIn aside .content .subtitle{
+font-weight:300;
+font-size:14px;
+margin:4px 0 40px 0;
+}
+#popupLogIn aside .content .para{
+font-weight:300;
+font-size:14px;
+margin:4px 0 40px 0;
+}
+#popupLogIn aside .content ul{
+list-style:initial;
+text-align:left;
+font-size:14px;
+margin:0 0 0 30px;
+}
+#popupLogIn aside .content ul li{
+margin-bottom:20px;
+opacity:0.98;
+}
+#popupLogIn .logIn{
+position:absolute;
+top:0;
+right:0;
+width:60%;
+height:100%;
+background:white;
+padding:50px 30px;
+-webkit-box-sizing:border-box;
+box-sizing:border-box;
+}
+#popupLogIn .logIn .changeLink{
+margin-bottom:60px;
+font-size:20px;
+}
+#popupLogIn .logIn .changeLink a{
+text-decoration:none;
+color:gray;
+}
+#popupLogIn .logIn .changeLink a.active{
+color:black;
+font-weight:bold;
+}
+#popupLogIn .logIn .forms{
+position:relative;
+height:250px;
+}
+#popupLogIn .logIn .forms .title{
+color:#28806d;
+font-weight:500;
+font-size:18px;
+margin-bottom:30px;
+}
+#popupLogIn .logIn .forms .form{
+position:absolute;
+top:0;
+left:0;
+width:50%;
+border-right:solid 1px #28806d;
+padding-right:30px;
+-webkit-box-sizing:border-box;
+box-sizing:border-box;
+}
+#popupLogIn .logIn .forms .form p{
+position:relative;
+}
+#popupLogIn .logIn .forms .form p:before{
+position:absolute;
+top:5px;
+right:0;
+display:block;
+color:#28806d;
+font: normal normal normal 14px/1 FontAwesome;
+font-size: 15px;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+#popupLogIn .logIn .forms .form p.username:before{
+content:"\f118";
+}
+#popupLogIn .logIn .forms .form p.oldpass:before{
+content:"\f13e";
+font-size: 14px;
+top:3px;
+}
+#popupLogIn .logIn .forms .form p.newpass:before{
+content:"\f13e";
+font-size: 15px;
+right:3px;
+top:3px;
+opacity:0.8;
+}
+#popupLogIn .logIn .forms .form p.confirm:before{
+content:"\f09c";
+right:0px;
+opacity:0.8;
+}
+#popupLogIn .logIn .forms .form p input{
+border-top:0;
+border-left:0;
+border-right:0;
+border-bottom:solid 1px #28806d;
+background-color:transparent;
+width:100%;
+padding:4px 0;
+margin-bottom:25px;
+font-size:13px;
+outline:none;
+}
+#popupLogIn .logIn .forms .form p input:focus{
+outline:none;
+}
+#popupLogIn .logIn .forms .form input.mB0{
+margin-bottom:0;
+}
+#popupLogIn .logIn .forms .separateur{
+position:absolute;
+height:100%;
+width:auto;
+right:0;
+top:0;
+z-index:1000;
+transform:translateX(50%);
+text-align:center;
+}
+#popupLogIn .logIn .forms .separateur span{
+background:white;
+position:absolute;
+padding:6px 0;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:#28806d;
+}
+#popupLogIn .logIn .forms .sociaux{
+position:absolute;
+top:0;
+right:0;
+width:50%;
+height:100%;
+padding-left:30px;
+-webkit-box-sizing:border-box;
+box-sizing:border-box;
+}
+#popupLogIn .logIn .submit{
+width:100%;
+margin-top:20px;
+}
+#popupLogIn .logIn .submit button{
+border:solid 1px #28806d;
+color:#28806d;
+font-size:16px;
+width:50%;
+max-width:250px;
+margin:0 auto;
+background:transparent;
+display:block;
+border-radius:7px;
+line-height:30px;
+}
