@@ -1,0 +1,245 @@
+body {
+  margin: 100px;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 95%; /* or adjust as needed */
+  margin: 20px auto 0;
+}
+
+.logout-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #ccc;
+}
+
+.logout-button img {
+  height: 16px;
+  width: 16px;
+}
+label {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-right: 50px;
+  font-weight: bold;
+}
+
+select {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  width: auto;
+  font-size: 15px;
+}
+select option {
+  font-size: 12px;
+}
+
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+tbody tr:hover {
+  background-color: #ddd;
+}
+input[type="text"][name="search"] {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: normal;
+  width: 250px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"][name="search"]:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 95%;
+  margin-right: 20px; /* or margin-right: 0; */
+  margin-left: auto;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  color: #212529;
+}
+
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+
+.table-bordered {
+  border: 1px solid #dee2e6;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #dee2e6;
+}
+
+.table thead th {
+  background-color: #5c5e5c;
+  color: #fff;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+  background-color: #e6f7ff;
+}
+
+.table .all-clear {
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: small;
+  padding: 10px 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.table .backlogs {
+  background-color: #f44336;
+  color: #fff;
+  font-size: small;
+  padding: 10px 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.grades-table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.grades-table th,
+.grades-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.grades-table th {
+  background-color: #494f4c;
+  color: #fff;
+}
+
+.grades-table tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.grades-table tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.grades-table tr:hover {
+  background-color: #ddd;
+}
+
+.student-table {
+  border-collapse: collapse;
+  width: 40%;
+  margin: 0 auto;
+  
+}
+
+.student-row {
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.student-row:hover {
+  background-color: #f1f1f1;
+}
+
+.student-image {
+  padding: 4px;
+  border: 1px solid #ddd;
+}
+
+.student-details {
+  padding: 4px;
+  border: 1px solid #ddd;
+  max-width: 50%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.details-table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.details-table td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+.details-table h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  font-weight: normal;
+}
+
+.details-table h5 {
+  margin: 0;
+  font-size: 18px;
+  color: #666;
+  font-weight: bold;
+}
+
+.no-details {
+  text-align: center;
+  margin-top: 20px;
+  color: #888;
+}
+
+.col-xs-12{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

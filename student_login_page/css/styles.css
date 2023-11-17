@@ -1,0 +1,162 @@
+body {
+padding-top: 70px;
+}
+.table {
+border-collapse: collapse;
+width: 95%;
+margin: 0 auto;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 1rem;
+background-color: #fff;
+color: #212529;
+}
+.table th,
+.table td {
+padding: 0.75rem;
+vertical-align: top;
+border-top: 1px solid #dee2e6;
+}
+.table thead th {
+vertical-align: bottom;
+border-bottom: 2px solid #dee2e6;
+}
+.table tbody + tbody {
+border-top: 2px solid #dee2e6;
+}
+.table-bordered {
+border: 1px solid #dee2e6;
+}
+.table-bordered th,
+.table-bordered td {
+border: 1px solid #dee2e6;
+}
+.table thead th {
+background-color: #5c5e5c;
+color: #fff;
+}
+.table tbody tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+.table tbody tr:hover {
+background-color: #e6f7ff;
+}
+.table .all-clear {
+background-color: #4CAF50;
+color: #fff;
+font-size: small;
+padding: 10px 10px;
+border-radius: 10px;
+display: inline-block;
+}
+.table .backlogs {
+background-color: #f44336;
+color: #fff;
+font-size: small;
+padding: 10px 10px;
+border-radius: 10px;
+display: inline-block;
+}
+.grades-table {
+border-collapse: collapse;
+width: 50%;
+margin: 0 auto;
+}
+.grades-table th,
+.grades-table td {
+padding: 8px;
+border: 1px solid #ddd;
+}
+.grades-table th {
+background-color: #494f4c;
+color: #fff;
+}
+.grades-table tr:nth-child(even) {
+background-color: #fff;
+}
+.grades-table tr:nth-child(odd) {
+background-color: #f2f2f2;
+}
+.grades-table tr:hover {
+background-color: #ddd;
+}
+.student-table {
+border-collapse: collapse;
+width: 40%;
+margin: 0 auto;
+}
+.student-row {
+background-color: #fff;
+transition: all 0.3s ease;
+}
+.student-row:hover {
+background-color: #f1f1f1;
+}
+.student-image {
+padding: 1px;
+border: 1px solid #ddd;
+}
+.student-details {
+padding: 4px;
+border: 1px solid #ddd;
+max-width: 50%;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.details-table {
+border-collapse: separate;
+border-spacing: 0 10px;
+width: 100%;
+margin-top: 20px;
+}
+.details-table td {
+border-bottom: 1px solid #ddd;
+padding: 10px;
+}
+.details-table h4 {
+margin: 0;
+font-size: 16px;
+color: #333;
+font-weight: normal;
+}
+.details-table h5 {
+margin: 0;
+font-size: 18px;
+color: #666;
+font-weight: bold;
+}
+.no-details {
+text-align: center;
+margin-top: 20px;
+color: #888;
+}
+
+h1 
+{
+margin-left: 120px; /* width of the logo + padding */
+font-size: 80px;
+text-shadow: 2px 2px 4px #000;
+text-align: center;
+}
+.logout-button {
+position: absolute;
+top: 10px;
+right: 10px;
+display: inline-block;
+padding: 5px;
+border-radius: 5px;
+background-color: #ccc;
+}
+.logout-button img {
+height: 16px;
+width: 16px;
+}
+.logo {
+width: 100%;
+}
+/* Adjust image size for mobile devices */
+@media (max-width: 767px) {
+.logo {
+width: 50%;
+}
+}
